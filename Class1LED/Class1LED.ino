@@ -15,6 +15,6 @@ void setup() {
 void loop() {
   analogWrite(LED_PIN, 255);   // turn the LED on (255 is the maximum value)
   delay(1000);               // wait for a second
-  digitalWrite(LED_PIN, 0);    // turn the LED off by making the voltage LOW
+  analogWrite(LED_PIN, 0);    // turn the LED off by making the voltage LOW
   delay(1000);               // wait for a second
 }
